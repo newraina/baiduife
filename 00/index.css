@@ -1,0 +1,85 @@
+body {
+    background-color: #DBDBDB;
+    font-family: "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+    font-size: small;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #4cbe98;
+    box-shadow: 0px 1px 15px;
+}
+
+#headimage {
+    width: 393px;
+    margin: 0 auto;
+}
+
+#main {
+    background-color: #292e2e;
+    width: 700px;
+    margin: 50px auto;
+}
+
+#down {
+    background-color: #4cbe98;
+    height: 500px;
+    box-shadow: 0px -1px 15px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#me,
+#computer {
+    padding: 20px;
+    border-radius: 0px 0px 40px 40px;
+}
+
+#me img,
+#computer img {
+    padding: 15px;
+}
+
+#me {
+    background-color: #ccc;
+    float: left;
+}
+
+#computer {
+    background-color: #ccc;
+    float: right;
+}
+
+#me-title {
+    font-size: 2em;
+    text-align: center;
+    width: 164px;
+}
+
+#computer-title {
+    font-size: 2em;
+    text-align: center;
+    width: 164px;
+    background-color: aqua;
+}
+
+.jiandao {
+    width: 124px;
+    height: 100px;
+}
+
+.shitou {
+    width: 124px;
+    height: 100px;
+}
+
+.bu {
+    width: 124px;
+    height: 100px;
+    /*    box-shadow: inset 3px 3px 3px #111;
+    border-radius: 2px;*/
+}
+
+#jiandao,
+#shitou,
+#bu {}
