@@ -1,0 +1,129 @@
+body {
+    background-color: #DBDBDB;
+    font-family: "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+    font-size: small;
+    color: #282b2b;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4cbe98;
+    box-shadow: 0 1px 15px;
+}
+
+#headimage {
+    width: 393px;
+    margin: 0 auto;
+}
+
+#main {
+    background-color: #292e2e;
+    width: 700px;
+    margin: 50px auto;
+}
+
+#down {
+    background-color: #4cbe98;
+    height: 500px;
+    box-shadow: 0 -1px 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+#me,
+#computer {
+    padding: 10px;
+    border-radius: 0 0 40px 40px;
+}
+
+#me img,
+#computer img {
+    margin: 15px;
+    padding: 1px;
+}
+
+#me {
+    background-color: #ccc;
+    float: left;
+}
+
+#computer {
+    background-color: #ccc;
+    float: right;
+}
+
+#me-title, #computer-title {
+
+    font-size: 1.5em;
+    text-align: center;
+    /*width: 164px;*/
+}
+
+#arrow {
+
+    margin-left: 11%;
+    margin-top: 8%;
+    float: left;
+}
+
+#result {
+    font-size: 55px;
+    background-color: #4cbe98;
+    position: absolute;
+    margin: 300px 0 0 250px;
+}
+
+/* 鼠标悬停样式 */
+.mouseOver, .mouseClick {
+    transition: box-shadow 500ms, border-radius 80ms;
+    -moz-box-shadow: inset 4px 3px 10px #333333;
+    -webkit-box-shadow: inset 4px 3px 10px #333333;
+    box-shadow: inset 0 0 10px #333333;
+    border-radius: 5px;
+}
+
+/*鼠标点击样式*/
+.mouseClick {
+    transition: background-color 100ms, box-shadow 100ms;
+    background-color: #96a7b8;
+    box-shadow: inset 0 0 13px #333333;
+}
+
+.arrow_box {
+    opacity: 0.91;
+    font-size: 16px;
+    position: relative;
+    background: #bfd0e1;
+    border: 1px solid #eff4ff;
+    padding: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 6px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.3);
+    float: left;
+    top: -170px;
+    left: 380px;
+    visibility: hidden;
+}
+
+.arrow_box span.bot {
+    border-width: 10px 7px;
+    border-style: dashed;
+    border-color: #eff4ff #eff4ff transparent transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 5px;
+    top: 45px;
+}
+
+.arrow_box span.top {
+    border-width: 10px 7px;
+    border-style: dashed;
+    border-color: #bfd0e1 #bfd0e1 transparent transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 4px;
+    top: 42px;
+}
