@@ -1,9 +1,9 @@
-function selectied(element) {
-    alert(element.getAttribute("font-size"));
-}
+var me = document.getElementById("me");
+var computer = document.getElementById("computer");
+var jiandao = document.getElementsByClassName("jiandao");
+var shitou = document.getElementsByClassName("shitou");
+var bu = document.getElementsByClassName("bu");
+var tempAnimation;
 
-window.onload = function () {
-    var clickimage = document.getElementById("me");
-    clickimage.onclick = alert("you");
-}
-
+addLoadEvent(mouseOver);
+addLoadEvent(mouseClick);
