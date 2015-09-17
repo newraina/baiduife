@@ -1,10 +1,10 @@
 /**
  * Created by newraina on 2015/9/10.
  */
-/*´¦ÀíÊó±êĞüÍ£µÄº¯Êı*/
+/*å¤„ç†é¼ æ ‡æ‚¬åœçš„å‡½æ•°*/
 
 function mouseOver() {
-    //ĞüÍ£Ö÷´¦Àíº¯Êı
+    //æ‚¬åœä¸»å¤„ç†å‡½æ•°
     var me_img = me.getElementsByTagName("img");
     for (var i = 0; i < me_img.length; i++) {
         var temp_element = me_img[i];

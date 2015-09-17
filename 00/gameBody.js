@@ -10,12 +10,12 @@ function randResult() {
     else return "2";
 }
 
-function game(){
+function game() {
     var count = 0;
     var v = 50;
     var tempRand = randResult();
 
-    gameAnimation(count, v,  tempRand);
+    gameAnimation(count, v, tempRand);
 }
 
 
@@ -30,7 +30,7 @@ function gameAnimation(count, v, tempRand) {
     addClass(elements[count % 3], "mouseClick");
 
     count++;
-    if (v > 320 && count%3 == tempRand) {
+    if (v > 320 && count % 3 == tempRand) {
         return true;
     }
     else {
