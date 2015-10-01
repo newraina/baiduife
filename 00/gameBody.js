@@ -5,21 +5,19 @@
 function randResult() {
     // 生成随机结果
     var rand = Math.random();
-    if (rand < 0.333) return "0";
-    else if (rand < 0.666) return "1";
-    else return "2";
+    if (rand < 0.333) return 0;
+    else if (rand < 0.666) return 1;
+    else return 2;
 }
 
+var count = 0;
+var v = 60;
+var tempRand = randResult();
+var oldTempRand;
 function game() {
-    var count = 0;
-    var v = 50;
-    var tempRand = randResult();
-
-    gameAnimation(count, v, tempRand);
+    gameAnimation();
 }
-
-
-function gameAnimation(count, v, tempRand) {
+function gameAnimation() {
     // 电脑出拳动画
     var elements = computer.getElementsByTagName("img");
 
@@ -30,11 +28,17 @@ function gameAnimation(count, v, tempRand) {
     addClass(elements[count % 3], "mouseClick");
 
     count++;
-    if (v > 320 && count % 3 == tempRand) {
-        return true;
+
+    v = v * 1.12;
+
+    if (count > 12 && (count % 3 == tempRand)) {
+        count = 0;
+        v = 60;
+        oldTempRand = tempRand;
+        tempRand = randResult();
+    } else {
+        tempAnimation = setTimeout('gameAnimation()', v);
     }
-    else {
-        v = v * 1.08;
-    }
-    tempAnimation = setTimeout("gameAnimation()", v);
+
+
 }

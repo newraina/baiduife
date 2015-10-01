@@ -5,5 +5,7 @@ var shitou = document.getElementsByClassName("shitou");
 var bu = document.getElementsByClassName("bu");
 var tempAnimation;
 
+
+
 addLoadEvent(mouseOver);
 addLoadEvent(mouseClick);

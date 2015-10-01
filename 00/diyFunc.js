@@ -46,17 +46,17 @@ function processMouseClick(element, mouseclickname) {
                     if (temp[k].className.search("jiandao") != -1) {
                         message[0].style.top = "-170px";
                         clearTimeout(tempTimeThing);
-                        tempTimeThing = setTimeout("youAreNotComputer()", 1100);
+                        tempTimeThing = setTimeout("youAreNotComputer()", 1500);
                     }
                     if (temp[k].className.search("shitou") != -1) {
                         message[0].style.top = "-40px";
                         clearTimeout(tempTimeThing);
-                        tempTimeThing = setTimeout("youAreNotComputer()", 1100);
+                        tempTimeThing = setTimeout("youAreNotComputer()", 1500);
                     }
                     if (temp[k].className.search("bu") != -1) {
                         message[0].style.top = "90px";
                         clearTimeout(tempTimeThing);
-                        tempTimeThing = setTimeout("youAreNotComputer()", 1100);
+                        tempTimeThing = setTimeout("youAreNotComputer()", 1500);
                     }
 
                     //setTimeout('message[0].style.visibility = "hidden"', 1500);
@@ -94,7 +94,7 @@ function resertClass(element, value) {
 
 function addClass(element, value) {
     // 向element增加class为value的类名
-    if (!element.className) {
+    if (! element.className) {
         element.className = value;
     } else {
         var newClassName = element.className;
