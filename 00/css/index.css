@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Microsoft YaHei', '微软雅黑', SimSun, '宋体', Heiti, '黑体', sans-serif;
+    font-family: 'Microsoft YaHei', '微软雅黑', Heiti, '黑体', sans-serif;
     font-size: small;
     margin: 0;
     padding: 0;
     color: #282b2b;
-    background-color: #fff;
+    background-color: #fdfdfd;
 }
 
 header {
@@ -14,66 +18,63 @@ header {
 
 #headimage {
     display: block;
-    width: 30%;
+    width: 24%;
     margin: 0 auto;
 }
 
-#main {
-    width: 700px;
-    margin: 50px auto;
-    background-color: #292e2e;
-}
-
 #down {
-    height: 500px;
-    border-radius: 15px 15px 0 0;
+    /*    height: 600px;*/
+    border-radius: 15px;
     background-color: #4cbe98;
     box-shadow: 0 -1px 15px;
 }
 
-#me, #computer {
-    padding: 10px;
-    border-radius: 0 0 40px 40px;
+#main {
+    overflow: hidden;
+    width: 38%;
+    margin: 50px auto;
+    /*    height: 40em;*/
+    /*    height:500px;*/
 }
 
-#me img, #computer img {
-    margin: 15px;
-    padding: 1px;
-}
-
-#me {
-    float: left;
-    background-color: #ccc;
-}
-
+#me,
 #computer {
-    float: right;
+    text-align: center;
+    border-radius: 0 0 40px 40px;
     background-color: #ccc;
+    float: left;
+    width: 25%;
 }
 
-#me-title, #computer-title {
+#me img,
+#computer img {
+    margin: 15px 0;
+    padding: 4px 0;
+}
+
+#me-title,
+#computer-title {
     font-size: 1.5em;
     text-align: center;
-    /*width: 164px;*/
 }
 
-#arrow {
+#mid {
+    text-align: center;
     float: left;
-    margin-top: 8%;
-    margin-left: 11%;
+    width: 50%;
 }
 
 #result {
+    text-align: center;
     font-size: 55px;
-    position: absolute;
-    margin: 300px 0 0 250px;
     background-color: #4cbe98;
 }
 
 
 /* 鼠标悬停样式 */
 
-.mouseOver, .mouseClick {
+.mouseOver,
+.mouseClick {
     transition: box-shadow 500ms, border-radius 80ms;
     border-radius: 5px;
     -webkit-box-shadow: inset 4px 3px 10px #333;
@@ -89,6 +90,9 @@ header {
     background-color: #96a7b8;
     box-shadow: inset 0 0 13px #333;
 }
+
+
+/*提示框样式*/
 
 .arrow_box {
     font-size: 16px;

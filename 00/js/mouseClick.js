@@ -1,7 +1,7 @@
 /**
  * Created by newraina on 2015/9/10.
  */
-/*处理鼠标点击的函数*/
+/*????????暮??*/
 
 function mouseClick() {
 
