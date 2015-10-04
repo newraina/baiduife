@@ -1,3 +1,5 @@
+"use strict";
+
 var me = document.getElementById("me");
 var computer = document.getElementById("computer");
 var jiandao = document.getElementsByClassName("jiandao");
