@@ -1,6 +1,10 @@
 "use strict";
 
+//定义一个全局变量记录鼠标点击的元素，用于在gameAnimation函数完成时得到用户出拳，与电脑出拳比较大小
+var current_mouse_on;
+
 function mouseClick() {
+
     //点击处理
     var me_img = me.getElementsByTagName("img");
     for (var i = 0; i < me_img.length; i++) {
@@ -94,6 +98,7 @@ function processMouseClick(element, mouseclickname) {
 
         // 如果已经出拳，则开始电脑出拳的动画效果
         if (parent.id == "me") {
+            current_mouse_on = element;
             clearTimeout(tempAnimation);
             game();
         }

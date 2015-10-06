@@ -18,8 +18,9 @@ var oldTempRand;
 var win_count = 0;
 
 function game() {
+    //结果区域恢复初始显示：游戏开始
+    showResult('default');
     gameAnimation();
-
 }
 
 function gameAnimation() {
@@ -29,16 +30,16 @@ function gameAnimation() {
         resertClass(elements[i], "mouseClick");
     }
     addClass(elements[count % 3], "mouseClick");
-    count++;
+    count+=1;
     v = v * 1.12;
-    if (count > 12 && ((count - 1) % 3 == tempRand)) {
+    if (count > 12 && ((count-1) % 3 == tempRand)) {
         count = 0;
         v = 60;
         oldTempRand = tempRand;
         tempRand = randResult();
 
         //比较我和电脑谁出的大
-        var me_selec_class = element.className;
+        var me_selec_class = current_mouse_on.className;
         var me_selec;
         var computer_selec = oldTempRand;
         if (me_selec_class.search('jiandao') != -1) {
@@ -81,5 +82,7 @@ function showResult(result) {
         score.innerHTML = win_count.toString();
     } else if (result == 'computer') {
         result_word.innerHTML = '电 <br/> 脑 <br/> 赢 <br/> 了 <br/> ';
+    }else if(result == 'default'){
+        result_word.innerHTML = '游 <br/> 戏 <br/> 开 <br/> 始 <br/> ';
     }
 }
