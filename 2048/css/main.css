@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'minijianlinxin';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../font/minijianlinxin.eot');
+    src: url('../font/minijianlinxin.eot?#iefix') format('embedded-opentype'),
+    url('../font/minijianlinxin.woff') format('woff'),
+    url('../font/minijianlinxin.ttf') format('truetype'),
+    url('../font/minijianlinxin.svg#minijianlinxin') format('svg');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    color: #776e65;
+    background: url("../res/background.jpg") repeat;
+
+}
+
+#container {
+    width: 500px;
+    margin: 0 auto;
+    /*padding: 1px;*/
+}
+
+header {
+    overflow: hidden;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-family: 'minijianlinxin', sans-serif;
+    font-size: 100px;
+    line-height: 72px;
+
+    float: left;
+
+    margin: 0;
+
+    letter-spacing: 5px;
+}
+
+#score {
+    font-size: 22px;
+    font-weight: bold;
+
+    float: right;
+
+    margin: 0;
+    /*padding: 15px 25px;*/
+    height: 72px;
+    width: 107px;
+    line-height: 74px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #eee4da;
+    border-radius: 5px;
+    background-color: #bbada0;
+}
+
+#score span {
+    color: #fff;
+}
+
+#score span::before {
+    display: inline-block;
+
+    width: 10px;
+
+    content: ' ';
+}
+
+#instruction {
+    overflow: hidden;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1px;
+    /*font-weight: bold;*/
+}
+
+.Button {
+    float: right;
+
+    color: #eee4da;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    padding: 0 20px;
+    letter-spacing: 0.1em;
+
+    background: #8f7a66;
+    height: 40px;
+    line-height: 42px;
+    width: 107px;
+}
+
+#game_border {
+    padding: 15px;
+    height: 500px;
+    margin: 20px auto 0 auto;
+
+    border-radius: 5px;
+    background-color: #4D4D4D;
+}
+
+.game_row {
+    overflow: hidden;
+    /*height: 115px;*/
+    margin-bottom: 15px;
+}
+
+.game_row:last-child {
+    margin-bottom: 0;
+}
+
+.game_cell {
+    float: left;
+    width: 106px;
+    height: 106px;
+    margin-right: 15px;
+    background-color: #E6AB5E;
+    border-radius: 2px;
+}
+
+.game_cell:last-child {
+    margin-right: 0;
+}
