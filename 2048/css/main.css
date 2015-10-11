@@ -134,9 +134,9 @@ header h1 {
 }
 
 .game_cell_selec {
-    -webkit-animation: move-up 800ms ease 1ms;
-    /*-o-animation: appear 200ms ease 1ms;*/
-    /*animation: appear 200ms ease 1ms;*/
+    -webkit-animation: appear 200ms ease 1ms;
+    -o-animation: appear 200ms ease 1ms;
+    animation: appear 200ms ease 1ms;
     text-align: center;
     color: #fdebbc;
     font-size: 60px;
