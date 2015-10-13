@@ -4,8 +4,12 @@
 
 //棋盘格数组
 var board = [];
+
+//分数统计
+var score = 0;
+
 //默认棋盘格的背景色
-var BACKGROUNDCOLOR = '#f4da9e';
+var BOARDBACKGROUNDCOLOR = '#CCC0B3';
 
 //初始化
 addLoadEvent(init);

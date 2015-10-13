@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/animation.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <script type="text/javascript" src="js/support.js"></script>
-    <script type="text/javascript" src="js/animation.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
@@ -21,6 +20,7 @@
         <button type="button" value="重新开始" class="Button" onclick="resetBoard()">重新开始</button>
         <p>相同数字融合相加 得到2048获胜!</p>
     </div>
+    <div id="game_message"></div>
     <div id="game_border">
         <div class="game_row">
             <div class="game_cell"></div>
@@ -47,12 +47,14 @@
             <div class="game_cell"></div>
         </div>
     </div>
+    <div id="tip">移不动了 ╮(╯▽╰)╭</div>
 </div>
 
 <!-- HTML 标记 -->
 <!-- 只让 IE8 之前的 IE 加载它 -->
 <!-- [if It IE 8] -->
 <script src="js/borderBoxModel-min.js"></script>
+
 <![endif]-->
 
 </body>
