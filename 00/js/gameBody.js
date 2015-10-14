@@ -2,15 +2,9 @@
 
 function randResult() {
     // 生成随机结果
-    var rand = Math.random();
-    if (rand < 0.333) {
-        return 0;
-    } else if (rand < 0.666) {
-        return 1;
-    } else {
-        return 2;
-    }
+    return Math.floor(Math.random() * 3);
 }
+
 var count = 0;
 var v = 60;
 var tempRand = randResult();
@@ -30,9 +24,9 @@ function gameAnimation() {
         resertClass(elements[i], "mouseClick");
     }
     addClass(elements[count % 3], "mouseClick");
-    count+=1;
+    count += 1;
     v = v * 1.12;
-    if (count > 12 && ((count-1) % 3 == tempRand)) {
+    if (count > 12 && ((count - 1) % 3 == tempRand)) {
         count = 0;
         v = 60;
         oldTempRand = tempRand;
@@ -81,8 +75,8 @@ function showResult(result) {
         win_count += 1;
         score.innerHTML = win_count.toString();
     } else if (result == 'computer') {
-        result_word.innerHTML = '电 <br/> 脑 <br/> 赢 <br/> 了 <br/> ';
-    }else if(result == 'default'){
+        result_word.innerHTML = '你 <br/> 输 <br/> 了 <br/> ... <br/> ';
+    } else if (result == 'default') {
         result_word.innerHTML = '游 <br/> 戏 <br/> 开 <br/> 始 <br/> ';
     }
 }
