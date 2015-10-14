@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>2048</title>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/animation.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <script type="text/javascript" src="js/support.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
-<div id="container">
-    <header>
-        <h1>2048</h1>
-
-        <p id="score">得分<span>0</span></p>
-    </header>
-    <div id="instruction">
-        <button type="button" value="重新开始" class="Button" onclick="resetBoard()">重新开始</button>
-        <p>相同数字融合相加 得到2048获胜!</p>
-    </div>
-    <div id="game_message"></div>
-    <div id="game_border">
-        <div class="game_row">
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
+    <head>
+        <meta charset="UTF-8">
+        <title>2048</title>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/animation.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script type="text/javascript" src="js/support.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?62016fb1314f8ffef1086a9f5e22d616";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>2048</h1>
+                <p id="score">得分<span>0</span></p>
+            </header>
+            <div id="instruction">
+                <button type="button" value="重新开始" class="Button" onclick="resetBoard()">重新开始</button>
+                <p>相同数字融合相加 得到2048获胜!</p>
+            </div>
+            <div id="game_message"></div>
+            <div id="game_border">
+                <div class="game_row">
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                </div>
+                <div class="game_row">
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                </div>
+                <div class="game_row">
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                </div>
+                <div class="game_row">
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                    <div class="game_cell"></div>
+                </div>
+            </div>
+            <div id="tip">移不动了 ╮(╯▽╰)╭</div>
         </div>
-        <div class="game_row">
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-        </div>
-        <div class="game_row">
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-        </div>
-        <div class="game_row">
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-            <div class="game_cell"></div>
-        </div>
-    </div>
-    <div id="tip">移不动了 ╮(╯▽╰)╭</div>
-</div>
-
-<!-- HTML 标记 -->
-<!-- 只让 IE8 之前的 IE 加载它 -->
-<!-- [if It IE 8] -->
-<script src="js/borderBoxModel-min.js"></script>
-
-<![endif]-->
-
-</body>
+        <!-- HTML 标记 -->
+        <!-- 只让 IE8 之前的 IE 加载它 -->
+        <!-- [if It IE 8] -->
+        <script src="js/borderBoxModel-min.js"></script>
+        <![endif]-->
+    </body>
 </html>
