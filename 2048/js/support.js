@@ -535,4 +535,5 @@ function resetScore() {
     var score_num = document.getElementById('score').childNodes[1];
     score_num.innerHTML = '0';
     score_num.style = '';
+    score = 0;
 }
