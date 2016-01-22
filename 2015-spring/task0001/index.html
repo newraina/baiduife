@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>任务1.1 百度前端学院 2015春季班</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        body {
+            margin: 0;
+            font-size: 12px;
+            background: #EEE;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 80px;
+            background: #9799A7;
+            padding-top: 35px;
+        }
+
+        header nav {
+            float: right;
+            padding: 0;
+            font-size: 14px;
+            height: 35px;
+            line-height: 35px;
+        }
+
+        nav li {
+            display: inline;
+            margin-left: 28px;
+        }
+
+        header .github-link {
+            position: absolute;
+            right: 10px;
+            top: 46px;
+        }
+
+        .banner {
+            background: url("img/banner-bg.jpg") no-repeat;
+            background-size: cover;
+            height: 500px;
+        }
+
+        .banner .container {
+            position: relative;
+            height: 100%;
+        }
+
+        .banner-content {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 360px;
+            padding: 10px 10px 30px;
+            color: #333;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0));
+        }
+
+        .banner-content h2 {
+            font-size: 14px;
+            text-align: right;
+        }
+
+        .banner-content p {
+            text-indent: 2em;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .pre-description {
+            padding-top: 10px;
+            overflow: hidden;
+        }
+
+        .pre-description-item {
+            width: 320px;
+            display: inline-block;
+            text-align: center;
+            background: #FFF;
+            padding-top: 10px;
+            margin-right: 3px;
+            vertical-align: top;
+            margin-bottom: -10000px;
+            padding-bottom: 10000px;
+        }
+
+        .pre-description-item:last-child {
+            margin-right: 0;
+        }
+
+        .pre-description-item p {
+            text-align: justify;
+            line-height: 1.7;
+            padding: 15px 30px 25px;
+        }
+
+        .self-intro {
+            background: #FFF;
+            height: 520px;
+            margin-top: 160px;
+            text-align: center;
+        }
+
+        .avatar {
+            margin-top: -50px;
+            border-radius: 1000px;
+        }
+
+        .self-intro h2 {
+            text-transform: uppercase;
+            margin-top: 50px;
+            font-size: 20px;
+            font-family: "Century Gothic", sans-serif;
+            font-weight: 300;
+        }
+
+        .self-intro p {
+            width: 600px;
+            font-size: 14px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+            line-height: 1.8;
+            text-indent: 24px;
+        }
+
+        footer {
+            background: #000;
+            color: #FFF;
+        }
+
+        footer nav {
+            text-align: center;
+            height: 36px;
+            line-height: 36px;
+            border-bottom: 1px #555 solid;
+        }
+
+        .links {
+            margin-top: 35px;
+        }
+
+        .links-item {
+            display: inline-block;
+            width: 19.5%;
+        }
+
+        .links-item h3 {
+            color: #AAA;
+        }
+
+        .links-item li {
+            margin-bottom: 8px;
+        }
+
+        .links-item a:hover {
+            border-bottom: 1px #FFF solid;
+        }
+
+        .copyright {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">文章</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+        </nav>
+    </div>
+    <a href="https://github.com/newraina" target="_blank" class="github-link"><img src="img/icon-github.png" alt="github"></a>
+</header>
+
+<div class="banner">
+    <div class="container">
+        <section class="banner-content">
+            <h2>流萤集</h2>
+            <p>
+                天空没有留下翅膀的痕迹，但我已经飞过。
+                I leave no trace of wings in the air,
+                but I am glad I have had my flight.
+            </p>
+        </section>
+    </div>
+</div>
+
+<div class="pre-description">
+    <div class="container">
+        <section class="pre-description-item">
+            <img src="img/description_1.jpg" alt="description's image">
+            <p>
+                刚开始进行审判时，苹果方面给出的赔偿金额为25亿美元。当然所有的官司都会出现前期要求高，然后逐步降低金额的套路，
+                从心理学的角度看，这样的做法可以起到给对方施压，让对方觉得这五亿多已经是最低的数额，从而在心理上慢慢接受后来所
+                提出的赔偿金额的目的。但是对三星这个在法院摸爬滚打的老手来说，这些小伎俩丝毫不会让他们放弃翻盘的打算。
+            </p>
+        </section>
+        <section class="pre-description-item">
+            <img src="img/description_2.jpg" alt="description's image">
+            <p>
+                刚开始进行审判时，苹果方面给出的赔偿金额为25亿美元。当然所有的官司都会出现前期要求高，然后逐步降低金额的套路，
+                从心理学的角度看，这样的做法可以起到给对方施压，让对方觉得这五亿多已经是最低的数额，从而在心理上慢慢接受后来所
+                提出的赔偿金额的目的。但是对三星这个在法院摸爬滚打的老手来说，这些小伎俩丝毫不会让他们放弃翻盘的打算。
+            </p>
+        </section>
+        <section class="pre-description-item">
+            <img src="img/description_3.jpg" alt="description's image">
+            <p>
+                刚开始进行审判时，苹果方面给出的赔偿金额为25亿美元。当然所有的官司都会出现前期要求高，然后逐步降低金额的套路
+            </p>
+        </section>
+    </div>
+</div>
+
+<div class="self-intro">
+    <img src="img/avatar.jpg" alt="avatar" class="avatar">
+    <h2>hi, I'm newraina</h2>
+    <p>
+        前端爱好者，学过C、Python、JavaScript，前面两个差不多都忘了……这可是一段很长的自我介绍哦，这可是一段很长的自我介绍哦，这可是一段很长的自我介绍哦
+        这可是一段很长的自我介绍哦，这可是一段很长的自我介绍哦，这可是一段很长的自我介绍哦，这可是一段很长的自我介绍!
+    </p>
+</div>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">文章</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </nav>
+    <div class="links container">
+        <div class="links-item">
+            <h3>学习资料</h3>
+            <ul>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+            </ul>
+        </div>
+        <div class="links-item">
+            <h3>学习资料</h3>
+            <ul>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+            </ul>
+        </div>
+        <div class="links-item">
+            <h3>学习资料</h3>
+            <ul>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+            </ul>
+        </div>
+        <div class="links-item">
+            <h3>友情链接</h3>
+            <ul>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+            </ul>
+        </div>
+        <div class="links-item">
+            <h3>友情链接</h3>
+            <ul>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>版权信息</p>
+        <a href="https://github.com/newraina"><img src="img/icon-github.png" alt="copyright"></a>
+    </div>
+</footer>
+</body>
+</html>
